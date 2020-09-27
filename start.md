@@ -8,7 +8,7 @@ sh mqnamesrv
 #broker
 #nohup ./bin/mqnamesrv -n 10.88.2.250:9876 &
 #tail -f ~/logs/rocketmqlogs/broker.log 
-sh mqbroker -n 10.88.2.250:9876 autoCreateTopicEnable=true
+sh mqbroker -n localhost:9876 autoCreateTopicEnable=true
 
 # 2 环境变量
 export NAMESRV_ADDR=localhost:9876
